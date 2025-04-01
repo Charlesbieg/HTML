@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            padding: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 10px 0;
+            transform: scale(0.8);
+            transition: transform 0.5s ease-in-out;
+        }
+        .image-section img:hover {
+            transform: scale(1);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Our Animated Landing Page</h1>
+    </div>
+    <div class="container">
+        <p>Experience smooth animations on this page.</p>
+        <div class="image-section">
+            <img src="https://via.placeholder.com/600" alt="Sample Image">
+            <img src="https://via.placeholder.com/600" alt="Another Sample Image">
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Animated Landing Page. owned by charles company ltd</p>
+    </div>
+</body>
+      </html>
